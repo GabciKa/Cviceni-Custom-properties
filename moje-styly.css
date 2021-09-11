@@ -4,6 +4,8 @@
 	--hlavni-barva: #dd614a;
     --doplnkova-barva: #73a580;
     --vnitrni-vypln-tlacitek: 0.5em;
+    --barva-textu: #ffffff;
+    --barva-pozadi:#15202b; 
 }
 
 h1 {
@@ -42,4 +44,25 @@ a:hover {
 
 a, button {
     font-size: inherit;
+}
+
+@media screen and (min-width: 800px) {
+    :root {
+        --vnitrni-vypln-tlacitek: 1em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --barva-textu: #ffffff;
+		--barva-pozadi: #15202b;
+    }
+
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --barva-textu: #15202b;
+		--barva-pozadi: #ffffff;
+    }
 }
